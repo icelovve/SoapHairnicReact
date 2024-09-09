@@ -5,11 +5,13 @@ import ContactPage from './pages/ContactPage'
 import Error404 from './pages/Error404';
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ScrollToTop from './components/shared/ScrollToTop';
 
 
 function App() {
     return (
         <BrowserRouter>
+            <ScrollToTop />
             <Routes>
                 <Route path='/' exact={true} element={<Home/>} />
                 <Route path='/about' element={<AboutPage />} />
