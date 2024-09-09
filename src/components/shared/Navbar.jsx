@@ -6,9 +6,9 @@ const Navbar = () => {
     <div class="container-fluid sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light p-0">
-                <a href="index.html" class="navbar-brand">
+                <Link to="/" class="navbar-brand">
                     <h2 class="text-white">Hairnic</h2>
-                </a>
+                </Link>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>

@@ -1,25 +1,25 @@
-import DocumentTitle from 'react-document-title'
-import Footer from '../shared/Footer'
+import DocumentTitle from 'react-document-title';
+import Footer from '../shared/Footer';
 import Navbar from '../shared/Navbar';
+import 'animate.css';  
 
-const Layout = ({children , title = "Home"}) => {
+const Layout = ({ children, title = "Home" }) => {
     return (
         <>
-            <DocumentTitle title = {title + ' | Hairnic Natural & OrganicHair Shampoo'} />
+            <DocumentTitle title={title + ' | Hairnic Natural & Organic Hair Shampoo'} />
             <div className='d-flex flex-column min-vh-100'>
-                <header>
+                <header className="fixed-top animate__animated animate__bounceInDown">
                     <Navbar />
                 </header>
-                <main  main id="main" className="main flex-grow-1" >
+                <main id="main" className="main flex-grow-1" style={{ paddingTop: '60px' }}>
                     {children}
                 </main>
                 <footer id="footer" className="footer bg-light text-center">
                     <Footer />
                 </footer>
             </div>
-            
         </>
-    )
+    );
 }
 
-export default Layout
+export default Layout;
