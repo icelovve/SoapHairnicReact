@@ -1,24 +1,12 @@
-import { Link } from "react-router-dom";
 import Layout from "../components/layout/Layout";
 import Products from "../components/shared/Products";
 import Newsletter from "../components/shared/Newsletter";
+import HeroSection from "../components/shared/HeroSection";
 
 const ProductsPage = () => {
     return (
         <Layout title="Products">
-            <div className="container-fluid bg-primary hero-header mb-5">
-                <div className="container text-center">
-                    <h1 className="display-4 text-white mb-3 animated slideInDown">Products</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol className="breadcrumb justify-content-center mb-0 animated slideInDown">
-                            <li className="breadcrumb-item"><Link className="text-white" to="/">Home</Link></li>
-                            <li className="breadcrumb-item"><Link className="text-white" to="#">Pages</Link></li>
-                            <li className="breadcrumb-item text-white active" aria-current="page">Products</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-
+            <HeroSection hero="Products" />
             <Products />
             <Newsletter />
         </Layout>
