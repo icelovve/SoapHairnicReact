@@ -1,6 +1,7 @@
 import DocumentTitle from 'react-document-title';
 import Footer from '../shared/Footer';
 import Navbar from '../shared/Navbar';
+import BackToTop from '../shared/BackToTop'
 import 'animate.css';  
 
 const Layout = ({ children, title = "Home" }) => {
@@ -13,6 +14,7 @@ const Layout = ({ children, title = "Home" }) => {
                 </header>
                 <main id="main" className="main flex-grow-1" style={{ paddingTop: '60px' }}>
                     {children}
+                    <BackToTop />
                 </main>
                 <footer id="footer" className="footer bg-light text-center">
                     <Footer />
